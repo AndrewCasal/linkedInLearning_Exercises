@@ -12,6 +12,8 @@ var dragndrop = (function() {
 
     function moveDrop(e) {
         e.preventDefault();
+        whichArt.style.left = e.pageX - mX + 'px';
+        whichArt.style.top = e.pageY - myY + 'px';
     }
 
     document.querySelector('body').addEventListener('dragstart', moveStart, false);
