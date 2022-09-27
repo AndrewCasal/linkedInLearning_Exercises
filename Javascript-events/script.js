@@ -11,4 +11,5 @@ var dragndrop = (function() {
     }
 
     document.querySelector('body').addEventListener('dragstart', moveStart, false);
+    document.querySelector('body').addEventListener('drop', moveDrop, false);
 })();
