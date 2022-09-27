@@ -3,6 +3,10 @@ var dragndrop = (function() {
     var myY = '';
     var whichArt = '';
 
+    function resetZ() {
+        var elements = document.querySelectorAll
+    }
+
     function moveStart(e) {
         whichArt = e.target;
         myX = e.offsetX === undefined ? e.layerX : e.offsetX;
