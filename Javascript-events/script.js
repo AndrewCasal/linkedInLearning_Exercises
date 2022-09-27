@@ -17,5 +17,6 @@ var dragndrop = (function() {
     }
 
     document.querySelector('body').addEventListener('dragstart', moveStart, false);
+    document.querySelector('body').addEventListener('dragover', moveDragOver, false);
     document.querySelector('body').addEventListener('drop', moveDrop, false);
 })();
