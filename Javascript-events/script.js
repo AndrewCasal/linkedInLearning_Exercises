@@ -30,6 +30,8 @@ var dragndrop = (function() {
 
     function touchStart(e) {
         e.preventDefault();
+        var whichArt = e.target;
+        var touch = e.touches[0];
     }
 
     document.querySelector('body').addEventListener('dragstart', moveStart, false);
