@@ -32,6 +32,7 @@ var dragndrop = (function() {
         e.preventDefault();
         var whichArt = e.target;
         var touch = e.touches[0];
+        var moveOffsetX = whichArt.offsetLeft - touch.pageX;
     }
 
     document.querySelector('body').addEventListener('dragstart', moveStart, false);
