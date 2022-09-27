@@ -10,6 +10,10 @@ var dragndrop = (function() {
         whichArt.style.zIndex = 10;
     }
 
+    function moveDrop(e) {
+        e.preventDefault();
+    }
+
     document.querySelector('body').addEventListener('dragstart', moveStart, false);
     document.querySelector('body').addEventListener('drop', moveDrop, false);
 })();
