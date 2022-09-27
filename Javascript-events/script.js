@@ -4,7 +4,10 @@ var dragndrop = (function() {
     var whichArt = '';
 
     function resetZ() {
-        var elements = document.querySelectorAll
+        var elements = document.querySelectorAll('img');
+        for (var i = elements.length - 1; i >= 0 ; i--) {
+            elements[i].style.zIndex = 5;
+        };
     }
 
     function moveStart(e) {
