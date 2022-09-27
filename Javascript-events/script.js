@@ -42,7 +42,7 @@ var dragndrop = (function() {
             var positionY = touch.pageY + moveOffsetY;
             whichArt.style.left = positionX + 'px';
             whichArt.styel.top = positionY + 'px';
-        })
+        }, false)
     }
 
     document.querySelector('body').addEventListener('dragstart', moveStart, false);
