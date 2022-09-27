@@ -10,6 +10,10 @@ var dragndrop = (function() {
         whichArt.style.zIndex = 10;
     }
 
+    function dragOver(e) {
+        e.preventDefault();
+    }
+
     function moveDrop(e) {
         e.preventDefault();
         whichArt.style.left = e.pageX - mX + 'px';
