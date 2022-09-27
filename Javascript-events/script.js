@@ -10,7 +10,7 @@ var dragndrop = (function() {
         whichArt.style.zIndex = 10;
     }
 
-    function dragOver(e) {
+    function moveDragOver(e) {
         e.preventDefault();
     }
 
