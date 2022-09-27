@@ -40,7 +40,8 @@ var dragndrop = (function() {
         whichArt.addEventListener('touchmove', function() {
             var positionX = touch.pageX + moveOffsetX;
             var positionY = touch.pageY + moveOffsetY;
-            
+            whichArt.style.left = positionX + 'px';
+            whichArt.styel.top = positionY + 'px';
         })
     }
 
