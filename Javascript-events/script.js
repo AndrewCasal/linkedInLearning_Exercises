@@ -28,6 +28,10 @@ var dragndrop = (function() {
         whichArt.style.top = e.pageY - myY + 'px';
     }
 
+    function touchStart(e) {
+        e.preventDefault();
+    }
+
     document.querySelector('body').addEventListener('dragstart', moveStart, false);
     document.querySelector('body').addEventListener('dragover', moveDragOver, false);
     document.querySelector('body').addEventListener('drop', moveDrop, false);
