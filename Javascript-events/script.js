@@ -36,6 +36,12 @@ var dragndrop = (function() {
         var moveOffsetY = whichArt.offsetTop - touch.pageY;
         resetZ();
         whichArt.style.zIndex = 10;
+
+        whichArt.addEventListener('touchmove', function() {
+            var positionX = touch.pageX + moveOffsetX;
+            var positionY = touch.pageY + moveOffsetY;
+            
+        })
     }
 
     document.querySelector('body').addEventListener('dragstart', moveStart, false);
